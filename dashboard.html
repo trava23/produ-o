@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard da Produção</title>
+</head>
+
+<body>
+  <h1>DASHBOARD DA PRODUÇÃO</h1>
+
+  <p>Tipo de lavoura: <select>
+      <option value="cafe">Café</option>
+      <option value="milho">Milho</option>
+      <option value="tomate">Tomate</option>
+    </select></p>
+
+  <p>Já regou a lavoura hoje?<input type="checkbox" value="Sim" id="inCheck">Sim</p>
+
+  <article>
+    <h2>Sugestão ao Agricultor</h2>
+    <p id="outSugestao"></p>
+  </article>
+
+  <article>
+    <h3>Temperatura</h3>
+    <p><span id="outTemperatura"></span>ºC</p>
+  </article>
+
+  <article>
+    <h3>Umidade</h3>
+    <p><span id="outUmidade"></span>%</p>
+  </article>
+
+  <article>
+    <h3>Previsão de Chuva</h3>
+    <p><span id="outPrevisao"></span>%</p>
+  </article>
+
+  <section>
+    <h2>SENSORES PARA SIMULAÇÃO DE CONDIÇÕES</h2>
+    <input type="range" id="inTemp" max="60">Sensor de Temperatura
+    <input type="range" id="inUmidade">Sensor de Umidade
+  </section>
+  <script src="./dashboard.js"></script>
+</body>
+
+</html>
