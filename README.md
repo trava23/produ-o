@@ -8,7 +8,7 @@ ser avisado quando for a hora de regar a plantação.
 
 tempo de produção: 6 horas
 
-integrantes: Pedro reis, Pedro loreto, Nicollas Kaiser, Gabriel Marques
+integrantes: Pedro reis, Pedro loreto, Nicollas Kaiser, Gabriel Marques, Jessica e karieli
 
 1º Maratona de programação
 
