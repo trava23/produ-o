@@ -34,28 +34,36 @@ document.addEventListener("DOMContentLoaded", function () {
                 if (previsao >= 80) {
                     outSugestao.textContent = "Há uma alta chance de chuva. Não é necessário regar a lavoura no momento.";
                 } else if (regouHoje) {
-                    outSugestao.textContent = "Você já regou a lavoura hoje. Não há necessidade de irrigar hoje. Continue monitorando sua lavoura.";
+                    outSugestao.textContent = "Você já regou a lavoura hoje. Não há necessidade de irrigação. Continue monitorando sua lavoura.";
                 } else if (tipoLavoura == 'cafe') {
                     if (temperaturaModerada && soloPoucoUmido) {
-                        outSugestao.textContent = "A temperatura esta moderada e o solo está pouco úmido. É recomendável regar a lavoura de café.";
+                        outSugestao.textContent = "A temperatura esta moderada e o solo está pouco úmido. É recomendável regar a lavoura de Café.";
                     } else if (temperaturaQuente && soloPoucoUmido) {
                         outSugestao.textContent = "A temperatura esta quente e o solo está pouco úmido. Escolha regar quando o clima estiver mais fresco";
+                    } else if (temperaturaQuente && soloUmido) {
+                        outSugestao.textContent = "A temperatura esta quente e o solo está úmido. Escolha regar quando o clima estiver mais fresco";
                     } else if (temperaturaModerada && soloUmido) {
                         outSugestao.textContent = "A temperatura esta moderada e o solo está úmido. Não é necessário regar a lavoura de Café no momento.";
                     }
             
                 } else if (tipoLavoura == 'milho') {
                     if (temperaturaQuente && soloPoucoUmido) {
-                        outSugestao.textContent = "As condições estão secas e quentes. É recomendável regar a lavoura de milho.";
+                        outSugestao.textContent = "As condições estão secas e quentes. É recomendável regar a lavoura de Milho.";
+                    } else if (temperaturaQuente && soloUmido) {
+                        outSugestao.textContent = "A temperatura esta quente e o solo está úmido. Não é necessário regar a lavoura de Milho no momento.";
                     } else if (temperaturaModerada && soloUmido) {
-                        outSugestao.textContent = "A temperatura esta moderada e o solo está úmido. Não é necessário regar a lavoura de milho no momento.";
+                        outSugestao.textContent = "A temperatura esta moderada e o solo está úmido. Não é necessário regar a lavoura de Milho no momento.";
+                    } else if (temperaturaModerada && soloPoucoUmido) {
+                        outSugestao.textContent = "A temperatura esta moderada e o solo está pouco úmido. Não é necessário regar a lavoura de Milho.";
                     }
             
                 } else if (tipoLavoura == 'tomate') {
                     if (temperaturaModerada && soloPoucoUmido) {
-                        outSugestao.textContent = "A temperatura esta moderada e o solo está pouco úmido. É recomendável regar a lavoura de milho.";
-                    } else if (temperaturaQuente) {
+                        outSugestao.textContent = "A temperatura esta moderada e o solo está pouco úmido. É recomendável regar a lavoura de Tomate.";
+                    } else if (temperaturaQuente && soloPoucoUmido) {
                         outSugestao.textContent = "A temperatura esta quente e o solo pouco úmido. Escolha regar quando o clima estiver mais fresco";
+                    } else if (temperaturaQuente && soloUmido) {
+                        outSugestao.textContent = "A temperatura esta quente e o solo úmido. Não é necessário regar a lavoura de Tomate no momento.";
                     } else if (temperaturaModerada && soloUmido) {
                         outSugestao.textContent = "A temperatura esta moderada e o solo está úmido. Não é necessário regar a lavoura de Tomate no momento.";
                     }
