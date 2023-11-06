@@ -10,4 +10,6 @@ tempo de produção: 6 horas
 
 integrantes: Pedro reis, Pedro loreto, Nicollas Kaiser, Gabriel Marques
 
+1º Maratona de programação
+
 data: 06/11/2023
